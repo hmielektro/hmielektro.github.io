@@ -578,7 +578,7 @@ section {
 }
 
 .about .content p {
-  color: gray;
+  color: darkslategray;
 }
 
 .tujuan {
@@ -655,6 +655,7 @@ section {
 --------------------------------------------------------------*/
 .features {
   padding-top: 20px;
+  background-color: lightgray;
 }
 
 .features h4 {
@@ -663,11 +664,12 @@ section {
 }
 
 .features p {
-  color: gray;
+  color: darkslategray;
 }
 
 .features .icon-box {
-  padding: 15px;
+  padding: 20px;
+  margin-left: 8px;
 }
 
 .features .hijau {
@@ -681,7 +683,6 @@ section {
 .features .icon-box h4 {
   font-size: 20px;
   font-weight: 700;
-  margin: 5px 0 10px 60px;
   color: white;
 }
 
@@ -694,7 +695,6 @@ section {
 .features .icon-box p {
   font-size: 15px;
   color: white;
-  margin-left: 60px;
 }
 
 .features .image {
@@ -818,6 +818,10 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+.portfolio {
+  background-color: lightgray;
+}
+
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
@@ -832,12 +836,12 @@ section {
 .portfolio #portfolio-flters li {
   cursor: pointer;
   display: inline-block;
-  padding: 8px 15px 10px 15px;
-  font-size: 14px;
+  padding: 8px 50px 10px 50px;
+  font-size: 30px;
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: #444444;
+  color: black;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
   border-radius: 3px;
@@ -845,12 +849,23 @@ section {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: #151515;
-  background: #ffc451;
+  color: green;
 }
 
 .portfolio #portfolio-flters li:last-child {
   margin-right: 0;
+}
+
+.portfolio .angka li {
+  padding: 8px 15px 10px 15px !important;
+  font-size: 14px !important;
+  border-radius: 50px !important;
+}
+
+.portfolio .angka li:hover,
+.portfolio .angka li.filter-active {
+  background-color: green !important;
+  color: white !important;
 }
 
 .portfolio .portfolio-wrap {
@@ -1198,16 +1213,25 @@ section {
 # Team
 --------------------------------------------------------------*/
 .team {
-  background: #fff;
+  background: lightgray;
   padding: 60px 0;
 }
 
 .team .member {
-  margin-bottom: 20px;
   overflow: hidden;
-  border-radius: 5px;
-  background: #fff;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
+}
+
+.team .hijau {
+  background-color: green;
+}
+
+.team .hitam {
+  background-color: black;
+}
+
+.team .pustaka {
+  margin-bottom: 20px;
 }
 
 .team .member .member-img {
@@ -1252,27 +1276,33 @@ section {
 
 .team .member .member-info {
   padding: 25px 15px;
+  color: white;
+}
+
+.team .pustaka .member-info {
+  bottom: 0px;
+  width: 100%;
+  color: white;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7) !important;
 }
 
 .team .member .member-info h4 {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 18px;
-  color: #151515;
 }
 
 .team .member .member-info span {
   display: block;
   font-size: 13px;
   font-weight: 400;
-  color: #aaaaaa;
 }
 
 .team .member .member-info p {
   font-style: italic;
   font-size: 14px;
   line-height: 26px;
-  color: #777777;
 }
 
 .team .member:hover .social {
